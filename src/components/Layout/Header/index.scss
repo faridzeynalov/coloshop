@@ -1,0 +1,140 @@
+header {
+  background-color: #fff;
+  box-shadow: 0 0px 10px 6px rgba(85, 85, 85, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10rem;
+    .logo {
+      a {
+        font-size: 2.4rem;
+        font-weight: 700;
+        color: #333;
+        span {
+          color: #fe4c50;
+        }
+      }
+    }
+    .headerRight {
+      display: flex;
+      column-gap: 5rem;
+      align-items: center;
+      ul {
+        display: flex;
+        align-items: center;
+        column-gap: 2rem;
+        li {
+          a {
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: #1e1e27;
+            text-transform: uppercase;
+            line-height: 2.3rem;
+            transition: all 0.3s ease;
+            &:hover {
+              color: #b5aec4;
+            }
+          }
+        }
+        button {
+          display: none;
+        }
+      }
+      > div {
+        display: flex;
+        align-items: center;
+        column-gap: 2rem;
+        a {
+          width: 4rem;
+          height: 4rem;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #eceff6;
+          i {
+            color: #1e1e27;
+            font-size: 1.6rem;
+            transition: all 0.3s ease;
+          }
+          &:hover {
+            i {
+              color: #b5aec4;
+            }
+          }
+        }
+        button {
+          background-color: transparent;
+          font-size: 1.8rem;
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    position: fixed;
+    width: 100%;
+    .container {
+      height: 8rem;
+      .logo {
+        a {
+          font-size: 2rem;
+        }
+      }
+      .headerRight {
+        ul {
+          position: fixed;
+          left: 0;
+          top: 0;
+          width: 100vw;
+          height: 100vh;
+          background-color: #fefefe;
+          flex-direction: column;
+          padding-top: 10rem;
+          transition: all 0.3s ease;
+          transform: translateX(100%);
+          li {
+            width: 100%;
+            a {
+              width: 100%;
+              text-align: end;
+              padding: 1rem;
+              border-bottom: 1px solid #e0e0e0;
+            }
+          }
+          button {
+            display: block;
+            position: absolute;
+            top: 2.4rem;
+            right: 1.6rem;
+            font-size: 2rem;
+            color: #1e1e27;
+            background-color: transparent;
+          }
+        }
+        ul.active {
+          transform: translateX(0);
+        }
+        > div {
+          a {
+            width: 3.5rem;
+            height: 3.5rem;
+            i {
+              font-size: 1.4rem;
+            }
+          }
+          button {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

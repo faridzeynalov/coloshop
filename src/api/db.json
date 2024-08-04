@@ -1,0 +1,77 @@
+{
+    "products": [
+      {
+        "id": "1",
+        "title": "Fujifilm X100T 16 MP Digital Camera (Silver)",
+        "price": 520,
+        "image": "https://preview.colorlib.com/theme/coloshop/images/product_1.png",
+        "category": "men"
+      },
+      {
+        "id": "2",
+        "title": "Samsung CF591 Series Curved 27-Inch FHD Monitor",
+        "price": 610,
+        "image": "https://preview.colorlib.com/theme/coloshop/images/product_2.png",
+        "category": "women"
+  
+      },
+      {
+        "id": "3",
+        "title": "Blue Yeti USB Microphone Blackout Edition",
+        "price": 120,
+        "image": "https://preview.colorlib.com/theme/coloshop/images/product_3.png",
+        "category": "women"
+  
+      },
+      {
+        "id": "4",
+        "title": "DYMO LabelWriter 450 Turbo Thermal Label Printer",
+        "price": 410,
+        "image": "https://preview.colorlib.com/theme/coloshop/images/product_4.png",
+        "category": "accessories"
+      },
+      {
+        "id": "5",
+        "title": "Pryma Headphones, Rose Gold & Grey",
+        "price": 180,
+        "image": "https://preview.colorlib.com/theme/coloshop/images/product_5.png",
+        "category": "women"
+      },
+      {
+        "id": "6",
+        "title": "Fujifilm X100T 16 MP Digital Camera (Silver)",
+        "price": 200,
+        "image": "https://preview.colorlib.com/theme/coloshop/images/product_5.png",
+        "category": "accessories"
+      },
+      {
+        "id": "7",
+        "title": "Blue Yeti USB Microphone Blackout Edition",
+        "price": 120,
+        "image": "https://preview.colorlib.com/theme/coloshop/images/product_3.png",
+        "category": "women"
+  
+      },
+      {
+        "id": "8",
+        "title": "DYMO LabelWriter 450 Turbo Thermal Label Printer",
+        "price": 410,
+        "image": "https://preview.colorlib.com/theme/coloshop/images/product_4.png",
+        "category": "accessories"
+      },
+      {
+        "id": "9",
+        "title": "Pryma Headphones, Rose Gold & Grey",
+        "price": 180,
+        "image": "https://preview.colorlib.com/theme/coloshop/images/product_5.png",
+        "category": "women"
+      },
+      {
+        "id": "10",
+        "title": "Fujifilm X100T 16 MP Digital Camera (Silver)",
+        "price": 200,
+        "image": "https://preview.colorlib.com/theme/coloshop/images/product_5.png",
+        "category": "accessories"
+      }
+    ]
+  }

@@ -1,0 +1,168 @@
+.homePage {
+  .banner {
+    height: 70rem;
+    overflow: hidden;
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .bannerText {
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        > div {
+          width: 60%;
+          p {
+            font-size: 1.4rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin-bottom: 2.9rem;
+            line-height: 2.3rem;
+            color: #282828;
+          }
+          h1 {
+            font-size: 7.2rem;
+            line-height: 7.2rem;
+            margin-bottom: 0.8rem;
+            font-weight: 400;
+            margin-bottom: 0.8rem;
+          }
+          a {
+            text-transform: uppercase;
+            background-color: #fe4c50;
+            transition: all 0.3s ease;
+            width: fit-content;
+            display: block;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 500;
+            text-align: center;
+            padding: 1rem 3rem;
+            border-radius: 0.3rem;
+            margin-top: 3.2rem;
+            &:hover {
+              background-color: #fe7c7f;
+            }
+          }
+        }
+      }
+    }
+  }
+  main {
+    padding-top: 3rem;
+    .categories {
+      padding-bottom: 6rem;
+      .container {
+        .categoryCards {
+          display: flex;
+          column-gap: 3.6rem;
+          .category {
+            height: 26.5rem;
+            position: relative;
+            overflow: hidden;
+            width: calc(100% / 3 - 7.2rem / 3);
+            &::before {
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 100%;
+              height: 100%;
+              background-color: rgba(0, 0, 0, 0.1);
+              z-index: 2;
+              transition: all 0.3s ease;
+            }
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              transition: all 0.5s ease;
+            }
+            &:hover {
+              img {
+                transform: scale(1.05);
+              }
+              &::before {
+                background-color: rgba(0, 0, 0, 0.5);
+              }
+            }
+            span {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              width: fit-content;
+              transform: translate(-50%, -50%);
+              padding: 1rem 3rem;
+              background-color: #fff;
+              color: #1e1e27;
+              font-size: 2.2rem;
+              font-weight: 600;
+              transition: all 0.3s ease;
+              text-transform: uppercase;
+              z-index: 3;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .homePage {
+    margin-top: 8rem;
+    .banner {
+      .bannerText {
+        .container {
+          > div {
+            width: 100%;
+            p {
+              font-size: 1.2rem;
+              margin-bottom: 1rem;
+            }
+            h1 {
+              font-size: 2.4rem;
+              line-height: 3rem;
+              margin-bottom: 0;
+            }
+            a {
+              font-size: 1.2rem;
+              padding: 1rem 2rem;
+              margin-top: 2.4rem;
+            }
+          }
+        }
+      }
+    }
+    main {
+      .categories {
+        .container {
+          .categoryCards {
+            flex-wrap: wrap;
+            .category {
+              width: 100%;
+              height: 16rem;
+              margin-bottom: 2.4rem;
+              span {
+                font-size: 1.6rem;
+                padding: 0.8rem 2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+}
