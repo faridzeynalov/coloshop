@@ -1,13 +1,20 @@
-import { useContext } from "react"
-import { ProductContext } from "../../contexts/ProductContext"
 import ProductCard from "../ProductCard"
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import './index.scss'
+import { useDispatch, useSelector } from 'react-redux';
+import { useEffect } from "react";
+import { fetchProductsAsync } from "../../redux/Slices/productSlice";
 
 const Products = () => {
+  const dispatch = useDispatch();
+  const products = useSelector((state) => state.products.value);
+  console.log(products)
 
-    const products = useContext(ProductContext)
+  useEffect(() => {
+    dispatch(fetchProductsAsync());
+  }, [dispatch]);
+
 
     const getUniqueCategories = (products) => {
         const categories = products.map((product) => product.category);

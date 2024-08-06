@@ -1,13 +1,21 @@
-import { useContext, useState } from 'react'
+import { useEffect, useState } from 'react'
 import Layout from '../../components/Layout'
-import { ProductContext } from '../../contexts/ProductContext'
 import './index.scss'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import { useDispatch, useSelector } from 'react-redux'
+import { fetchProductsAsync } from '../../redux/Slices/productSlice'
 
 const AddProductPage = () => {
 
-  const products = useContext(ProductContext)
+  const dispatch = useDispatch()
+  const products = useSelector((state) => state.products.value)
   const [search, setSearch] = useState('')
+
+
+  useEffect(() => {
+    dispatch(fetchProductsAsync())
+  }, [dispatch])
+
 
       const filteredProducts = products.filter((product) => product.title.toLowerCase().includes(search.trim().toLowerCase()))
 

@@ -13,10 +13,10 @@ const Header = () => {
     <header>
       <div className="container">
         <div className="logo">
-          <a href="">
+          <Link to="/">
             COLO
             <span>SHOP</span>
-          </a>
+          </Link>
         </div>
         <div className="headerRight">
           <ul className={showMenu}>
